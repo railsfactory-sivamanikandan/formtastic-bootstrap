@@ -1,6 +1,6 @@
 module FormtasticBootstrap
   module Inputs
-    class TimeInput < Formtastic::Inputs::TimeInput
+    class TimeInput < Formtastic::Inputs::TimeSelectInput
       include Base
       include Base::Stringish
       include Base::Timeish

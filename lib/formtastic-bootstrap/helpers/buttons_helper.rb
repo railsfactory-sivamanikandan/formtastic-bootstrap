@@ -22,7 +22,7 @@ module FormtasticBootstrap
           args = [:commit] if args.empty?
           contents = args.map { |button_name| send(:"#{button_name}_button") }
           template.content_tag(:div, html_options.except(:builder, :parent, :name)) do
-            Formtastic::Util.html_safe(contents.join)
+            contents.join.html_safe
           end
         end
 
@@ -48,7 +48,7 @@ module FormtasticBootstrap
         accesskey = (options.delete(:accesskey) || default_commit_button_accesskey) unless button_html.has_key?(:accesskey)
         button_html = button_html.merge(:accesskey => accesskey) if accesskey
 
-        Formtastic::Util.html_safe(submit(text, button_html))
+        submit(text, button_html).html_safe
       end
 
     end

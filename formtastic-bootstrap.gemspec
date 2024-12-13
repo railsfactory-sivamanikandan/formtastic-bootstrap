@@ -107,7 +107,7 @@ Gem::Specification.new do |s|
     "spec/support/formtastic_spec_helper.rb",
     "vendor/assets/stylesheets/formtastic-bootstrap.css"
   ]
-  s.homepage = "http://github.com/mjbellantoni/formtastic-bootstrap"
+  s.homepage = "https://github.com/railsfactory-sivamanikandan/formtastic-bootstrap"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.15"
